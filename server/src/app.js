@@ -9,9 +9,15 @@ app.use(morgan('combined'));
 app.use(bodyParser.json());
 app.use(cors());
 
+app.post('/register', (req, res) => {
+  res.send({
+    message: `Your email is ${req.body.email}`,
+  });
+});
+
 app.get('/status', (req, res) => {
   res.send({
-    message: 'Hello World!',
+    message: 'Status is good',
   });
 });
 
