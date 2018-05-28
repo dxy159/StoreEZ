@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/nodemon/bin/nodemon.js src/app.js --exec 'npm run lint && node'",
-    "lint": "./node_modules/.bin/eslint **/*.js"
+    "start": "./node_modules/nodemon/bin/nodemon.js src/app.js"
   },
   "keywords": [],
   "author": "",
@@ -13,10 +12,11 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
-    "eslint": "^4.19.1",
     "express": "^4.16.3",
     "morgan": "^1.9.0",
-    "nodemon": "^1.17.4"
+    "nodemon": "^1.17.4",
+    "sequelize": "^4.37.7",
+    "sqlite3": "^3.1.8"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
